@@ -8,27 +8,38 @@
     <meta name="description" content="Convert Roman numerals to Arabic numerals and Vice versa." />
     <meta name="keywords" content="Convert, Roman numerals, Arabic numerals, converter app" />
     <!-- Googlr fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contributors.css">
     <title>Roman Numeral Conversion</title>
   </head>
   <body>
   <!-- pop up div -->
-  <div class="popup">
-    <div class="popup__container">
-      <button type="button" class="close-button"></button>
-      <h2 class="popup__title">Instructions</h2>
-      <p class="popup__text">To convert Roman numerals, type a number from 1 to 3999. <br> To convert to Arabic numerals, type a valid alphabets. </p>
+  <div class="container">
+    <div class="childup">
+      <div class="popup">
+        <div class="popup__container">
+          <button type="button" class="close-button"></button>
+          <h2 class="popup__title">Instructions</h2>
+          <p class="popup__text">To convert Roman numerals, type a number from 1 to 3999. <br> To convert to Arabic numerals, type a valid alphabets. </p>
+        </div>
+      </div>
+        <!-- converter div -->
+        <div class="main">
+          <h1>Roman Numeral Converter</h1>
+          <!-- arbic input -->
+          <input id="arabicInput" type="text" name="arabic"  placeholder="arabic numbers"><br>
+          <!-- roman input -->
+          <input id="romanInput" type="text" name="roma" value="" placeholder="roman numbers">
+          <button type="button" class=" btn btn-warning popup-button">click me</button>
+       </div>
+       <h1 style="color: white;">created by Moralist festus</h1>
     </div>
+    
   </div>
-    <!-- converter div -->
-    <div class="main">
-      <h1>Roman Numeral Converter</h1><button type="button" class="popup-button">click me</button>
-      <!-- arbic input -->
-      <input id="arabicInput" type="text" name="arabic"  placeholder="arabic numbers"><br>
-      <!-- roman input -->
-      <input id="romanInput" type="text" name="roma" value="" placeholder="roman numbers">
-   </div>
     <script type="text/javascript" src="js/app.js">
     </script>
     

@@ -1,15 +1,4 @@
-const callButton = document.querySelector('.popup-button');
-const popup = document.querySelector('.popup');
-const closeButton = popup.querySelector('.close-button');
-
-popupToggle = () => {
-  popup.classList.toggle('popup_opened');
+const open=()=>{
+  swal('To convert Roman numerals, type a number from 1 to 3999.To convert to Arabic numerals, type a valid alphabets. ')
 }
-
-closeOnBlack = (event) => {
-  if (event.target === event.currentTarget) popupToggle();
-}
-
-callButton.addEventListener('click', popupToggle);
-closeButton.addEventListener('click', popupToggle);
-popup.addEventListener('click', closeOnBlack);
+document.querySelector('.btn').onclick=()=>{open()   }
