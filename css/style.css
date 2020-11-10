@@ -49,6 +49,7 @@ input{
 	color: #fff;
 }
 
+/*
 .popup-button{
     background-color: lightgreen;
     border-radius: 3px;
@@ -57,6 +58,7 @@ input{
     top: 0;
     buttom: 0;
 }
+*/
 @media(max-width: 500px) {
 	body{
 		padding-top: 20px;
